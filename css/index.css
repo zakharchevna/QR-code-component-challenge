@@ -75,7 +75,6 @@ h6 {
    --qr-item-description: hsl(220, 15%, 55%);
    --footer-links: hsl(228, 45%, 44%);
    --qr-item-shadow: hsl(212, 17%, 78%);
-   --product-btn-hover: hsl(158, 44%, 29%);
    --qr-item-background: hsl(0, 0%, 100%);
 }
 
@@ -83,44 +82,38 @@ body {
    font-family: 'Outfit', sans-serif;
    background-color: var(--body-background);
    height: 100vh;
-   width: 100vw;
-   font-size: 100%;
    line-height: 1;
    font-size: 15px;
    font-weight: 400;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
 
-.wrap {
-   min-height: 100%;
-   overflow: hidden;
-}
-
 .main {
-   max-width: 1440px;
+   max-width: 1240px;
    margin: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
-}
-.qr-component {
    flex: 1 1 auto;
-   margin: 4rem 0 4rem 0;
 }
-.qr-component__item {
+.qr-item {
    max-width: 300px;
    background-color: var(--qr-item-background);
    border-radius: 20px;
    padding: 0.8rem;
    box-shadow: 8px 8px 20px var(--qr-item-shadow);
+   margin: 4rem 0 4rem 0;
+   text-align: center;
+   margin: 5px;
 }
 
-.qr-item__content {
-   text-align: center;
-}
-.qr-item__img img {
+.qr-item img {
    max-width: 100%;
    border-radius: 10px;
 }
@@ -138,18 +131,17 @@ body {
 }
 
 .attribution {
-   font-size: 14px;
+   font-size: 12px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-bottom: 0.5rem;
 }
 
 .attribution a {
    color: var(--footer-links);
 }
 @media (min-width: 550px) {
-   .qr-component {
+   .qr-item {
       margin: 8rem 0 10rem 0;
       }
    .attribution {
