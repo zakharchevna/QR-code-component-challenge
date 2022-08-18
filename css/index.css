@@ -1,0 +1,163 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+button {
+   display: block;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+/*----------------------------------------------------------------------*/
+
+:root {
+   --body-background: hsl(212, 45%, 89%);
+   --qr-item-title: hsl(218, 44%, 22%);
+   --qr-item-description: hsl(220, 15%, 55%);
+   --footer-links: hsl(228, 45%, 44%);
+   --qr-item-shadow: hsl(212, 17%, 78%);
+   --product-btn-hover: hsl(158, 44%, 29%);
+   --qr-item-background: hsl(0, 0%, 100%);
+}
+
+body {
+   font-family: 'Outfit', sans-serif;
+   background-color: var(--body-background);
+   height: 100vh;
+   width: 100vw;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 15px;
+   font-weight: 400;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.main {
+   max-width: 1440px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.qr-component {
+   flex: 1 1 auto;
+   margin: 4rem 0 4rem 0;
+}
+.qr-component__item {
+   max-width: 300px;
+   background-color: var(--qr-item-background);
+   border-radius: 20px;
+   padding: 0.8rem;
+   box-shadow: 8px 8px 20px var(--qr-item-shadow);
+}
+
+.qr-item__content {
+   text-align: center;
+}
+.qr-item__img img {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.qr-item__title:not(:last-child) {
+   padding: 1rem 0;
+   font-weight: 700;
+   color: var(--qr-item-title);
+   font-size: 1.3rem;
+}
+
+.qr-item__description {
+   padding-bottom: 1.65rem;
+   color: var(--qr-item-description);
+}
+
+.attribution {
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 0.5rem;
+}
+
+.attribution a {
+   color: var(--footer-links);
+}
+@media (min-width: 550px) {
+   .qr-component {
+      margin: 4rem 0 8rem 0;
+      }
+   .attribution {
+      max-width: 1440px;
+      margin: auto;
+      flex-direction: row;
+   } 
+   .attribution p:not(:last-child) {
+      margin-right: 5px;
+   }
+}
