@@ -129,7 +129,7 @@ body {
    padding: 1rem 0;
    font-weight: 700;
    color: var(--qr-item-title);
-   font-size: 1.3rem;
+   font-size: 1.4rem;
 }
 
 .qr-item__description {
@@ -150,7 +150,7 @@ body {
 }
 @media (min-width: 550px) {
    .qr-component {
-      margin: 4rem 0 8rem 0;
+      margin: 8rem 0 10rem 0;
       }
    .attribution {
       max-width: 1440px;
