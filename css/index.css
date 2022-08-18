@@ -110,7 +110,6 @@ body {
    box-shadow: 8px 8px 20px var(--qr-item-shadow);
    margin: 4rem 0 4rem 0;
    text-align: center;
-   margin: 5px;
 }
 
 .qr-item img {
